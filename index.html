@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+ <head>
+  <meta charset="utf-8"/>
+  <title>CSS3 Animation</title>
+  <style type="text/css">
+   @-webkit-keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+    } 
+   div {
+   width:100px;
+   height:100px;
+   background:#ff00ff;
+   position:relative;
+   -webkit-animation:mymove 15s;
+   animation:mymove 15s;
+   }
+  </style>
+ </head>
+
+ <body>
+  <div>
+  </div>
+ </body>
+</html>
