@@ -6,10 +6,18 @@
   <title>CSS3 Animation with Filter</title>
   <style type="text/css">
    @-webkit-keyframes mymove {
-    0%   {top: 0px;}
-    25%  {top: 200px;}
-    75%  {top: 50px}
-    100% {top: 100px;}
+    0%   {top:0px;
+	     -webkit-filter:blur(1px);
+	     filter:blur(1px);}
+    25%  {top:25px;
+	     -webkit-filter:blur(3px);
+	     filter:blur(3px);}
+    75%  {top:75px;
+	     -webkit-filter:blur(6px);
+	     filter:blur(6px);}
+    100% {top:100px;
+	     -webkit-filter:blur(10px);
+	     filter:blur(10px);}
     } 
    div {
    width:100px;
@@ -18,7 +26,8 @@
    position:relative;
    -webkit-animation:mymove 15s;
    animation:mymove 15s;
-   -webkit-filter: brightness(1.1) drop-shadow(39px 39px 20px black);
+   -webkit-filter:blur(1px);
+	     filter:blur(1px);
    }
   </style>
  </head>
